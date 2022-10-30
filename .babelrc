@@ -1,0 +1,3 @@
+{
+    "presets" : ["@babel/preset-env", "@babel/preset-react"] // @babel/preset-env traduce la sintassi ES6 in ES5, @babel/preset-react traduce JSX in ES5
+}

@@ -1,0 +1,109 @@
+/*desktop*/
+.section1Info__separetor {
+    padding: 10px 0px 10px 40px;
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section1Info__separetor p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.section1Info__wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+.section1Info__wrapper__table {
+    width: 100%;
+}
+
+.section1Info__wrapper__table__mainRow {
+    font-weight: bold;
+    color: #555;
+}
+
+.section1Info__wrapper__table__mainRow {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.section1Info__wrapper__table__info {
+    text-align: center;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section1Info__wrapper__table__info__weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1Info__wrapper__table__mainRow td:nth-child(even) {
+    background-color: rgb(85, 85, 85, 0.02);
+}
+
+.section1Info__wrapper__table__infoWeather td:nth-child(even) {
+    background-color: rgb(85, 85, 85, 0.02);
+}
+
+.section1Info__wrapper__table__info td:nth-child(even) {
+    background-color: rgb(85, 85, 85, 0.02);
+}
+
+.section1Info__wrapper__table__infoWeather {
+    color: #555;
+}
+
+.main p:nth-child(n+2) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0;
+}
+
+.section1Info__wrapper__table__infoTemp p:nth-child(1) {
+    font-weight: bold;
+}
+
+.info {
+    text-align: center;
+}
+
+.first {
+    font-weight: bold;
+}
+
+.second p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/*modbile*/
+
+@media screen and (max-width: 1000px) {
+    .section1Info__wrapper__table__mainRow__uvi, .section1Info__wrapper__table__info__uvi, 
+    .section1Info__wrapper__table__mainRow__wind, .section1Info__wrapper__table__info__wind,
+    .section1Info__wrapper__table__mainRow__press, .section1Info__wrapper__table__info__press,
+    .section1Info__wrapper__table__mainRow__morning, .section1Info__wrapper__table__mainRow__evening,
+    .section1Info__wrapper__table__infoWeather__infoMorn, .section1Info__wrapper__table__infoWeather___infoEve,
+    .section1Info__wrapper__table__infoWeather__infoHum, .section1Info__wrapper__table__infoWeather__infoWeend   {
+        display: none;
+    }
+
+    .section1Info__wrapper__table__info__weather {
+        display: block;
+    }
+
+    .section1Info__wrapper__table__info__weather p {
+        width: 100%;
+    }
+
+    .section1Info__wrapper__table__mainRow__morning {
+        display: none;
+    }
+}

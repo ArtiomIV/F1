@@ -1,0 +1,27 @@
+/*desktop*/
+.section1__week {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+}
+
+.section1__cityName {
+    padding: 10px 0px 10px 40px;
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section1__cityName p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/*mobile*/
+@media screen and (max-width: 1000px) {
+    .section1__week {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

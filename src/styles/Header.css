@@ -1,0 +1,83 @@
+/*desktop*/
+.header__background {
+    background-color: #1461a1;
+    display: flex;
+    padding: 0 0vw 0 2vw;
+    justify-content: space-between;
+}
+
+.header__appName {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__inputBox {
+    display: flex;
+    align-items: center;
+}
+
+.header__cityName {
+    height: 30px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    box-shadow: 40px 10px 5px ;
+}
+
+.header__searchButton {
+    background-image: url(../img/search_1.svg);
+    background-color: #3876b2;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 32px;
+    height: 32px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+}
+
+.header__searchButton:hover {
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+.header__data {
+    display: flex;
+    align-items: center;
+    background-color: #3876b2;
+    border-bottom: 2px solid #135891;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    max-height: 20px;
+    margin-top: 5px;
+    padding: 4px 4px 4px 4px;
+    position: relative;
+    top: 0;
+    right: -2px;
+}
+
+/*modbile*/
+@media screen and (max-width: 1000px) {
+    .header__background {
+        display: block;
+        padding: 0 2vw 0 2vw;
+        margin: 0;
+    }
+
+    .header__background h1 {
+        margin: 0;
+    }
+
+    .header__inputBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .header__data {
+        display: none;
+    }
+}

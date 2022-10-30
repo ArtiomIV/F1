@@ -1,0 +1,32 @@
+/*desktop*/
+body {
+    margin: 0 20px 0 20px ;
+}
+
+.root {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(139, 0, 0);
+}
+
+.app__wrapper {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*modible*/
+@media screen and ((max-width: 1000px)){
+    .app__wrapper {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        margin: 0;
+    }
+}

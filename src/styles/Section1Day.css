@@ -1,0 +1,44 @@
+.day__wrapper_ns {
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #1461a1;
+    transition: 1s;
+}
+
+.day__wrapper_s {
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+    transition: 1s;
+}
+
+.day__weekDay {
+    font-weight: bold;
+}
+
+.day__img {
+    background-image: url("../img/cloudy.svg");
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.day__imgWrapper {
+    display: flex;
+    justify-content: center;   
+    padding: 0;
+}
+
+.day__temp_ns {
+    font-size: 13px;
+    color: white;
+    transition: 1s;
+}
+.day__temp_s {
+    font-size: 13px;
+    color: #555;
+    transition: 1s;
+}
