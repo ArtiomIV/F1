@@ -33,20 +33,28 @@ function Section1Info(props) {
 
             for (let i=0; i<props.hourly.length;i++) {
 
-                if (props.selected[0] == 1 && toDate(props.hourly[i].dt).getDate() <= now.getDate()) {
-                    arr[i] = props.hourly[i]
-
-                } else if (props.selected[0] != 1 && toDate(props.hourly[i].dt).getDate() > now.getDate() && toDate(props.hourly[i].dt).getDate() < now.getDate()+2) {
-                    
+                if (props.selected[0] == 1 && toDate(props.hourly[i].dt).getDate() == now.getDate()) {
                     if (!arr[0].dt) {
                         arr[0] = props.hourly[i]
 
                     } else {
-                        arr[i] = props.hourly[i]
+                        arr.push(props.hourly[i])
                     }
 
+                } else if (props.selected[0] != 1 && toDate(props.hourly[i].dt).getDay() == now.getDay() + 1) {
+                    if (!arr[0].dt) {
+                        arr[0] = props.hourly[i]
+
+                    } else {
+                        arr.push(props.hourly[i])
+                    }
+
+                    console.log(toDate(props.hourly[i].dt).getDate())
                 }
+                console.log(now.get)
             }
+        
+            
 
             return (
                 <>

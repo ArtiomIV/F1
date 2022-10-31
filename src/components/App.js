@@ -6,12 +6,11 @@ import Section1 from "./Section1"
 
 function App() {
     let [city, setCity] = useState("");
-    let [result, setResult] = useState("");
     return(
         <>
             <div className="app__wrapper">
-                <Header setCity={setCity} setResult={setResult}/>
-                <Section1 city={city} res={result}/>
+                <Header setCity={setCity}/>
+                <Section1 city={city}/>
             </div> 
         </>
     );

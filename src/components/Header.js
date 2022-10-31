@@ -23,7 +23,6 @@ function Header({setCity, setResult}) {
                 .then(res => {
 
                     setNewCity(document.getElementsByClassName("header__cityName")[0].value);
-                    setResult(res.data)
 
                 })
                 .catch((error) => {

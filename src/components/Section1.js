@@ -7,7 +7,7 @@ import Section1Info from "./Section1Info";
 
 let lastCity = ""
 
-function Section1({city, res}) {
+function Section1({city}) {
     //static variables
     const week = [0, 1, 2, 3, 4, 5, 6];
     const KEY = "1b7010e315a81d8b2b902f0b7d0162a1";
@@ -107,6 +107,7 @@ function Section1({city, res}) {
         lastCity = "Rome";
 
     }
+
 
     return(
         <>  
