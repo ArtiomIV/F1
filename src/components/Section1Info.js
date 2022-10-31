@@ -4,6 +4,7 @@ import "../styles/Section1Info.css"
 
 function Section1Info(props) {
     let now = new Date();
+    let tomorrow = new Date(new Date().setDate(new Date().getDate() + 1));
     let arr = Array({
         dt:"",
         temp:"",
@@ -41,7 +42,7 @@ function Section1Info(props) {
                         arr.push(props.hourly[i])
                     }
 
-                } else if (props.selected[0] != 1 && toDate(props.hourly[i].dt).getDay() == now.getDay() + 1) {
+                } else if (props.selected[0] != 1 && toDate(props.hourly[i].dt).getDay() == tomorrow.getDay()) {
                     if (!arr[0].dt) {
                         arr[0] = props.hourly[i]
 
@@ -51,7 +52,6 @@ function Section1Info(props) {
 
                     console.log(toDate(props.hourly[i].dt).getDate())
                 }
-                console.log(now.get)
             }
         
             

@@ -19,7 +19,7 @@ function Header({setCity, setResult}) {
         .then(res => {
 
             if (res.data[0]) {
-                axios.get(`https://api.openweathermap.org/data/3.0/onecall?lat=${res.data[0].lat}&lon=${res.data[0].lon}&exclude=minutely&appid=${KEY}&units=metric`)
+                axios.get(`https://api.openweathermap.org/data/3.0/onecall?lat=${res.data[0].lat}&lon=${res.data[0].lon}&exclude=minutely&appid=${KEY}&units=metric&`)
                 .then(res => {
 
                     setNewCity(document.getElementsByClassName("header__cityName")[0].value);
